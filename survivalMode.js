@@ -247,7 +247,7 @@ function update() {
   ctx.font = '16px Arial';
   const w = ctx.measureText(ctrl).width;
   ctx.fillText(ctrl, canvas.width/2 - w/2, canvas.height/2);
-
+  Move: W/A/S/D | Shoot: Arrow Keys | Dash: E | Shield: Q Pause: P
   if (player.health <= 0) return gameOver();
   requestAnimationFrame(update);
 }
