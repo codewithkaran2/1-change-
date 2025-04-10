@@ -246,7 +246,9 @@ function update() {
   if (player.health <= 0) return gameOver();
   requestAnimationFrame(update);
 }
-
+function gameOver() {
+  gameOverState = true;
+  bgMusic.pause();
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   const nameEl = document.getElementById('playerNameInput');
