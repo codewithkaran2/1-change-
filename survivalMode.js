@@ -13,12 +13,6 @@ const enemyBullets = [];
 const enemies = [];
 const powerUps = [];
 
-// Audio assets (add your actual file paths)
-const bgMusic = new Audio("assets/sounds/survival_bg.mp3");
-const shootSound = new Audio("assets/sounds/shoot.wav");
-const enemyDeathSound = new Audio("assets/sounds/enemy_death.wav");
-const gameOverSound = new Audio("assets/sounds/game_over.wav");
-
 // Player setup
 const player = {
   x: 0,
@@ -247,7 +241,7 @@ function update() {
   ctx.font = '16px Arial';
   const w = ctx.measureText(ctrl).width;
   ctx.fillText(ctrl, canvas.width/2 - w/2, canvas.height/2);
-   Move: W/A/S/D | Shoot: Arrow Keys | Dash: E | Shield: Q |Pause: P;
+  Move: W/A/S/D | Shoot: Arrow Keys | Dash: E | Shield: Q |Pause: P
   if (player.health <= 0) return gameOver();
   requestAnimationFrame(update);
 }
