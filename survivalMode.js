@@ -243,7 +243,7 @@ function update() {
   ctx.fillText(`Time: ${Math.floor((Date.now() - startTime)/1000)}s`, 10, 120);
 
   // Controls centered
-  const ctrl = 'Move: W/A/S/D | Shoot: Arrow Keys | Dash: E | Shield: Q | Pause: P';
+  
   ctx.font = '16px Arial';
   const w = ctx.measureText(ctrl).width;
   ctx.fillText(ctrl, canvas.width/2 - w/2, canvas.height/2);
