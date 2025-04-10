@@ -247,10 +247,7 @@ function update() {
   requestAnimationFrame(update);
 }
 
-function gameOver() {
-  gameOverState = true;
-  bgMusic.pause();
-  gameOverSound.play();
+
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   const nameEl = document.getElementById('playerNameInput');
   const nm = nameEl && nameEl.value ? nameEl.value : 'Player';
