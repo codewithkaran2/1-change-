@@ -330,4 +330,5 @@ if (duoBtn && survivalBtn) {
 // Expose globals
 window.survivalStartGame = survivalStartGame;
 window.togglePause = togglePause;
+window.restartGame = restartGame;
 window.playAgain = playAgain;
